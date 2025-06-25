@@ -2,8 +2,8 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
 
-project = 'My Project'
-author = 'Your Name'
+project = 'Robot Control Stack Documentation'
+author = 'Khaled Gamal'
 release = '0.1'
 
 extensions = [
