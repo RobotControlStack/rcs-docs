@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>RCS &#8212; Robot Control Stack 0.1 documentation</title>
+    <title>Development &#8212; Robot Control Stack 0.1 documentation</title>
   
   
   
@@ -41,10 +41,11 @@
     <script src="_static/documentation_options.js?v=2709fde1"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'development';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Installation Guide" href="installation.html" />
+    <link rel="next" title="Concepts" href="concepts.html" />
+    <link rel="prev" title="Usage" href="usage.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -102,7 +103,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="index.html">
   
   
   
@@ -137,8 +138,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="development.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
     Development
   </a>
 </li>
@@ -230,10 +231,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -262,8 +261,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="development.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
     Development
   </a>
 </li>
@@ -320,6 +319,15 @@
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"></div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
       <div class="sidebar-primary-item">
@@ -340,7 +348,31 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none"></div>
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Development</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
               
               
               
@@ -348,35 +380,32 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="rcs">
-<h1>RCS<a class="headerlink" href="#rcs" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation Guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#requirements">Requirements</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="usage.html#command-line-interface">Command Line Interface</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="development.html#stub-files-for-python-bindings">Stub Files for Python Bindings</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="concepts.html">Concepts</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs_action_observation_flow/action_obersvation_flow.html">Action-Observation Flow</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs_action_observation_flow/action_obersvation_flow.html#sequence-diagram">Sequence Diagram</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
-</ul>
+  <section id="development">
+<h1>Development<a class="headerlink" href="#development" title="Link to this heading">#</a></h1>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># check for c++ formatting errors</span>
+make<span class="w"> </span>cppcheckformat
+<span class="c1"># fix them</span>
+make<span class="w"> </span>cppformat
+<span class="c1"># Linting with clang tidy</span>
+make<span class="w"> </span>cpplint
+<span class="c1"># check for python formatting errors</span>
+make<span class="w"> </span>pycheckformat
+<span class="c1"># fix them</span>
+make<span class="w"> </span>pyformat
+<span class="c1"># Linting with ruff and mypy</span>
+make<span class="w"> </span>pylint
+<span class="c1"># Testing</span>
+make<span class="w"> </span>pytest
+</pre></div>
+</div>
+<section id="stub-files-for-python-bindings">
+<h2>Stub Files for Python Bindings<a class="headerlink" href="#stub-files-for-python-bindings" title="Link to this heading">#</a></h2>
+<p>We use autogenerated python stub files (<code class="docutils literal notranslate"><span class="pre">.pyi</span></code>) in the <a class="reference internal" href="#python/rcs/_core/"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">_core</span></code></span></a> folder to show our linters the expected types of the C++ Python bindings.
+If the python bindings in the C++ code have changed you might need to regenerate them by using:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>stubgen
+</pre></div>
 </div>
 </section>
-<section id="robot-control-stack">
-<h1>Robot Control Stack<a class="headerlink" href="#robot-control-stack" title="Link to this heading">#</a></h1>
-<p>RCS is a unified and multilayered robot control interface over a MuJoCo simulation and real world robot currently implemented for the FR3.</p>
 </section>
 
 
@@ -402,17 +431,15 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">RCS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#robot-control-stack">Robot Control Stack</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stub-files-for-python-bindings">Stub Files for Python Bindings</a></li>
 </ul>
-
   </nav></div>
 
   <div class="sidebar-secondary-item">
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/index.md.txt"
+      <li><a href="_sources/development.md.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>

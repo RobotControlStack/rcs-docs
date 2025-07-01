@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>RCS &#8212; Robot Control Stack 0.1 documentation</title>
+    <title>Concepts &#8212; Robot Control Stack 0.1 documentation</title>
   
   
   
@@ -41,10 +41,11 @@
     <script src="_static/documentation_options.js?v=2709fde1"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'concepts';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Installation Guide" href="installation.html" />
+    <link rel="next" title="Action-Observation Flow" href="docs_action_observation_flow/action_obersvation_flow.html" />
+    <link rel="prev" title="Development" href="development.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -102,7 +103,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="index.html">
   
   
   
@@ -144,8 +145,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="concepts.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
     Concepts
   </a>
 </li>
@@ -230,10 +231,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -269,8 +268,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="concepts.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
     Concepts
   </a>
 </li>
@@ -320,6 +319,19 @@
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="docs_action_observation_flow/action_obersvation_flow.html">Action-Observation Flow</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
       <div class="sidebar-primary-item">
@@ -340,7 +352,31 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none"></div>
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Concepts</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
               
               
               
@@ -348,35 +384,19 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="rcs">
-<h1>RCS<a class="headerlink" href="#rcs" title="Link to this heading">#</a></h1>
+  <section id="concepts">
+<h1>Concepts<a class="headerlink" href="#concepts" title="Link to this heading">#</a></h1>
 <div class="toctree-wrapper compound">
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation Guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#requirements">Requirements</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="usage.html#command-line-interface">Command Line Interface</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="development.html#stub-files-for-python-bindings">Stub Files for Python Bindings</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="concepts.html">Concepts</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs_action_observation_flow/action_obersvation_flow.html">Action-Observation Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs_action_observation_flow/action_obersvation_flow.html">Action-Observation Flow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="docs_action_observation_flow/action_obersvation_flow.html#wrapper-hierarchy">wrapper Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs_action_observation_flow/action_obersvation_flow.html#flow">Flow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="docs_action_observation_flow/action_obersvation_flow.html#sequence-diagram">Sequence Diagram</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
 </ul>
 </div>
-</section>
-<section id="robot-control-stack">
-<h1>Robot Control Stack<a class="headerlink" href="#robot-control-stack" title="Link to this heading">#</a></h1>
-<p>RCS is a unified and multilayered robot control interface over a MuJoCo simulation and real world robot currently implemented for the FR3.</p>
 </section>
 
 
@@ -395,24 +415,10 @@
 
 
   <div class="sidebar-secondary-item">
-<div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">RCS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#robot-control-stack">Robot Control Stack</a></li>
-</ul>
-
-  </nav></div>
-
-  <div class="sidebar-secondary-item">
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/index.md.txt"
+      <li><a href="_sources/concepts.md.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>
