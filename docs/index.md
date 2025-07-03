@@ -1,13 +1,5 @@
 # RCS (Robotic Control Stack)
-```{toctree}
-:maxdepth: 2
-:caption: Contents:
-installation.md
-usage.md
-development.md
-concepts.md
-api.md
-```
+
 
 ![image](images/RCS.png)
 
@@ -42,3 +34,11 @@ api.md
 
 
 
+```{toctree}
+:maxdepth: 1
+installation.md
+usage.md
+development.md
+concepts.md
+api.md
+```
