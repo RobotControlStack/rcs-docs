@@ -34,3 +34,7 @@ Install the package in editable mode for active development:
 ---
 
 
+```{toctree}
+:maxdepth: 1
+
+```

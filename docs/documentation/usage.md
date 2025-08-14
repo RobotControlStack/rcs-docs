@@ -1,4 +1,4 @@
-# Usage
+# Library Usage / API
 The python package is called `rcs`.
 
 ## Direct Robot Control
@@ -77,25 +77,7 @@ Checkout the python examples in the [examples](examples) folder:
 All of these examples work both in the MuJoCo simulation as well as on your hardware FR3.
 
 
-## Hardware Extensions
-To enable hardware usage in RCS, install the needed hardware extensions via pip. RCS itself comes with a couple of supported extensions e.g. control of the FR3 via the [`rcs_fr3`](extensions/rcs_fr3) extension. All native supported extension are located in [extensions](extensions).
-To install extensions:
-```shell
-pip install -ve extensions/rcs_fr3
-```
-For more details real the readme file of the respective extension.
+```{toctree}
+:maxdepth: 1
 
-After the required hardware extensions are installed the examples also above work on real hardware:
-Switch to hardware by setting the following flag:
-```python
-ROBOT_INSTANCE = RobotPlatform.SIMULATION
-# ROBOT_INSTANCE = RobotPlatform.HARDWARE
-```
-
-### Command Line Interface
-Some modules include command line interfaces, e.g. rcs_fr3 defines useful commands to handle the FR3 robot without the need to use the Desk Website.
-You can see the available subcommands as follows:
-```shell
-python -m rcs_fr3 --help
-python -m rcs_realsense --help
 ```

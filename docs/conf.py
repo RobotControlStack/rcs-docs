@@ -22,6 +22,13 @@ html_static_path = ['_static']
 html_theme_options = {
     "github_url": "https://github.com/RobotControlStack/rcs-docs",
     "show_prev_next": False,
+    "navbar_start": ["navbar-logo"],  # ensures the logo is shown
+    "logo": {
+        "image_light": "images/rcs_logo.png",  # your PNG
+        "image_dark": "images/rcs_logo.png",   # can be same or a dark-mode version
+        "text": "RCS",                 # text next to the icon
+    },
+
 }
 
 myst_enable_extensions = [
