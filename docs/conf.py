@@ -20,7 +20,7 @@ html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
 
 html_theme_options = {
-    "github_url": "https://github.com/RobotControlStack/rcs-docs",
+    "github_url": "https://github.com/utn-mi/robot-control-stack",
     "show_prev_next": False,
     "navbar_start": ["navbar-logo"],  # ensures the logo is shown
     "logo": {

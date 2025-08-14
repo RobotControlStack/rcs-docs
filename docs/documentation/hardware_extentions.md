@@ -119,4 +119,3 @@ The FR3 extension also defines useful CLI commands for controlling the robot wit
 
 - **Examples:** See the [`examples`](../../examples/) folder for more usage samples.
 -  **Franka Desk Documentation:** Refer to the FR3 manufacturer’s manual for setup and safety.
--  **Safety Notice:** Always verify movement commands in **simulation first** before running on real hardware.
