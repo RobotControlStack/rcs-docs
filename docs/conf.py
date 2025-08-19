@@ -21,6 +21,7 @@ html_static_path = ['_static']
 
 html_theme_options = {
     "github_url": "https://github.com/utn-mi/robot-control-stack",
+    "use_edit_page_button": True,
     "show_prev_next": False,
     "navbar_start": ["navbar-logo"],  # ensures the logo is shown
     "logo": {
@@ -30,6 +31,14 @@ html_theme_options = {
     },
 
 }
+
+html_context = {
+    "github_user": "RobotControlStack",
+    "github_repo": "rcs-docs",
+    "github_version": "main",  # branch name
+    "doc_path": "docs",        # relative path in the repo where your docs live
+}
+
 
 myst_enable_extensions = [
     "colon_fence",
