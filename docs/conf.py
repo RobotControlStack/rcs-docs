@@ -20,13 +20,13 @@ html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
 
 html_theme_options = {
-    "github_url": "https://github.com/utn-mi/robot-control-stack",
+    "github_url": "https://github.com/RobotControlStack/robot-control-stack",
     "use_edit_page_button": True,
     "show_prev_next": False,
     "navbar_start": ["navbar-logo"],  # ensures the logo is shown
     "logo": {
-        "image_light": "images/rcs_logo.png",  # your PNG
-        "image_dark": "images/rcs_logo.png",   # can be same or a dark-mode version
+        "image_light": "images/rcs_logo_multiline.svg",  # your PNG
+        "image_dark": "images/rcs_logo_multiline.svg",   # can be same or a dark-mode version
         "text": "RCS",                 # text next to the icon
     },
 

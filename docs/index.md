@@ -1,7 +1,7 @@
 # Robotic Control Stack (RCS)
 
 
-![image](images/RCS.png)
+![image](images/rcs_architecture_small.svg)
 
 **RCS**  is a modular toolset designed to streamline the process of setting up and running robotics experiments and simulations. Rather than being a rigid framework, RCS acts as a minimalist, scalable architecture that brings together existing tools into an integrated system with simple, unified interfaces.
 
@@ -26,18 +26,5 @@
 - **Teleoperation for Data Collection**  
   RCS supports teleoperation to manually control robots and collect expert task demonstrations, which are essential for training robotics foundation models (RFMs).
 
-- **Policy-Based Control with RFMs**  
-  RCS allows robots to be controlled using trained AI policies, including those from RFMs, by providing a modular interface for easy policy switching and remote inference execution.
-
-- **Modular Inverse Kinematics**  
-  The RCS architecture enables users to configure and swap inverse kinematics (IK) algorithms without modifying code, demonstrating the system’s modularity and flexibility.
-
-
-
-```{toctree}
-:maxdepth: 1
-documentation.md
-contributing.md
-changelog.md
-roadmap.md
-```
+- **Policy-Based Control**  
+  RCS allows robots to be controlled using trained imitation and reinforcement learning policies by providing a modular interface for easy policy switching and remote inference execution.
