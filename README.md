@@ -1,4 +1,4 @@
-# My Project
+# RCS Docs
 
 This project is documented with Sphinx and pydata-sphinx-theme.
 

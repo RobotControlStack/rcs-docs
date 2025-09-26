@@ -3,8 +3,8 @@ import sys
 sys.path.insert(0, os.path.abspath('..'))
 
 project = 'Robot Control Stack'
-author = 'Khaled Gamal'
-release = '0.1'
+author = 'Tobias Jülg'
+release = '0.4'
 
 extensions = [
     'myst_parser',
@@ -18,6 +18,8 @@ exclude_patterns = []
 
 html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
+html_logo = "images/rcs_logo_multiline.svg"
+html_favicon = "images/favicon.ico"
 
 html_theme_options = {
     "github_url": "https://github.com/RobotControlStack/robot-control-stack",
@@ -27,7 +29,6 @@ html_theme_options = {
     "logo": {
         "image_light": "images/rcs_logo_multiline.svg",  # your PNG
         "image_dark": "images/rcs_logo_multiline.svg",   # can be same or a dark-mode version
-        "text": "RCS",                 # text next to the icon
     },
 
 }

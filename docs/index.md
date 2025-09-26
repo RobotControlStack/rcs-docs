@@ -28,3 +28,11 @@
 
 - **Policy-Based Control**  
   RCS allows robots to be controlled using trained imitation and reinforcement learning policies by providing a modular interface for easy policy switching and remote inference execution.
+
+```{toctree}
+:maxdepth: 1
+documentation.md
+contributing.md
+changelog.md
+roadmap.md
+```
